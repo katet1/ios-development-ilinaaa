@@ -3,9 +3,22 @@ import UIKit
 import Foundation
 
 //решить квадратное уравнение
-var a = 5
-var d = (a*a)+2*a+1
-print("решение квадратного уравнения: \(d)")
+var a: Double = 3
+var b: Double = 13
+var c: Double = 10
+
+var x1: Double
+var x2: Double
+
+var d: Double = (b*b)-4*a*c
+
+if (d >= 0) {
+    x1 = (-b + sqrt(d))/(2*a)
+    x2 = (-b - sqrt(d))/(2*a)
+} else {
+    print("дискриминант меньше нуля")
+}
+
 
     //Даны катеты прямоугольного треугольника. Найти площадь, периметр и гипотенузу треугольника.
 var katet1: Double = 3
